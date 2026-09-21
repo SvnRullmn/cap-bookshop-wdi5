@@ -14,21 +14,21 @@
         "app/admin-books"
     ],
     "dependencies": {
-        "@sap/cds": "^6.3.2",
-        "@sap/cds-dk": "^6.4.0",
-        "@sap/cds-odata-v2-adapter-proxy": "^1.9.0",
-        "@sap/xssec": "^3",
-        "express": "^4.17.1",
-        "passport": ">=0.4.1",
-        "sqlite3": "^5"
+        "@sap/cds": "^9.7.1",
+        "@sap/cds-dk": "^9.7.1",
+        "@cap-js-community/odata-v2-adapter": "^1.15.0",
+        "@sap/xssec": "^4.0.0",
+        "express": "^5.0.0",
+        "passport": "^0.7.0",
+        "@cap-js/sqlite": "^2"
     },
     "devDependencies": {
-        "@sap/ux-specification": "^1.102.14",
+        "@sap/ux-specification": "^1.120.0",
         "axios": "^1",
-        "chai": "^4.3.4",
-        "chai-as-promised": "^7.1.1",
+        "chai": "^6.2.0",
+        "chai-as-promised": "^8.0.0",
         "chai-subset": "^1.6.0",
-        "semver": "^7"
+        "semver": "^7.6.0"
     },
     "scripts": {
         "genres": "cds serve test/genres.cds",
@@ -39,7 +39,7 @@
         "deploy": "cf deploy gen/mta.tar -f"
     },
     "engines": {
-        "node": "^18"
+        "node": "^22"
     },
     "cds": {
         "features": {
